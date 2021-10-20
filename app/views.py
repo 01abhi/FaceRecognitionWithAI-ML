@@ -6,3 +6,6 @@ def base():
     
 def index():
     return render_template("index.html")
+
+def facerecapp():
+    return render_template("facerecapp.html")
