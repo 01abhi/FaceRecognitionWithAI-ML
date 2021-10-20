@@ -1,0 +1,13 @@
+.content{
+    color: rgb(70, 70, 207);
+  }
+
+.footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    background-color: rgb(14, 14, 78);
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }  
