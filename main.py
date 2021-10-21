@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.add_url_rule('/base','base',views.base)
 app.add_url_rule('/','index',views.index)
 app.add_url_rule('/facerecapp','facerecapp',views.facerecapp)
+app.add_url_rule('/facerecapp/gender','gender',views.gender) 
 
 #run
 if __name__ == "__main__":
