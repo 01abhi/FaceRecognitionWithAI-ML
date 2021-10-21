@@ -9,3 +9,6 @@ def index():
 
 def facerecapp():
     return render_template("facerecapp.html")
+
+def gender():
+    return render_template("gender.html")
