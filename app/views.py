@@ -2,7 +2,7 @@ from flask import render_template, request
 from flask import redirect, url_for
 import os
 
-UPLOADS_FOLEDER = 'static/uploads'
+UPLOADS_FOLDER = 'static/uploads'
 
 
 def base():
@@ -15,4 +15,10 @@ def facerecapp():
     return render_template("facerecapp.html")
 
 def gender():
+    if request.method == 'POST':
+        f = request.files['image']
+        filename = f.filename
+        path = os.path.join(UPLOADS_FOLDER,filename)
+        f.save(path)
+
     return render_template("gender.html")
