@@ -13,4 +13,18 @@
             <input type="submit" value="upload and predict">
         </form>
     </div>
-{% endblock %}
+    <br>
+
+    {% if fileupload %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static',filename='uploads/')}}{{ img_name }}" alt="facerecai" width = '300' height = auto >
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url_for('static',filename='uploads/')}}{{ img_name }}" alt="facerecai"  width = '300' height = auto>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %} 
