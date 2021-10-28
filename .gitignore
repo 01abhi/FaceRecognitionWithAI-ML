@@ -211,3 +211,11 @@ cython_debug/
 # Cython debug symbols
 
 # End of https://www.toptal.com/developers/gitignore/api/flask,python
+
+# Misc
+notebook/data/female/
+notebook/data/male/
+notebook/data/crop/
+notebook/data/*.npz
+notebook/data/*pickle
+notebook/*.png
